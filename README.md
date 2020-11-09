@@ -2,7 +2,7 @@
 
 Simon game implemented as a part of a challenge in the course: [The Complete 2020 Web Development Bootcamp](https://www.udemy.com/course/the-complete-web-development-bootcamp/) on [Udemy](https://www.udemy.com/).
 
-[Play the game](https://zcsain.github.io/simon-game/index.html): https://zcsain.github.io/simon-game/index.html
+[Play the game here](https://zcsain.github.io/simon-game/index.html)
 
 ---
 
