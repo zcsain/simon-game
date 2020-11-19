@@ -4,14 +4,12 @@ Simon game implemented as a part of a challenge in the course: [The Complete 202
 
 [Play the game here](https://zcsain.github.io/simon-game/index.html)
 
----
 
 ### Challenge - Start
 Files that were provided at the beginning of the challenge:
   - styles.css
   - index.html
 
----
 
 ### Challenge - Finish
 Tasks to complete challenge:
@@ -19,7 +17,6 @@ Tasks to complete challenge:
   - [x] link jQuery
   - [x] implement the Simon game logic
 
----
 
 ### Technologies used:
   - JS DOM manipulation
