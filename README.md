@@ -16,7 +16,7 @@ Files that were provided at the beginning of the challenge:
   - sounds
 
 ## Challenge - Finish
-Tasks to complete challenge:
+### Tasks to complete challenge:
   - [x] link index.js
   - [x] link jQuery
   - [x] implement pattern generation
