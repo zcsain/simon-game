@@ -25,7 +25,7 @@ Files that were provided at the beginning of the challenge:
   - [x] implement user input check
   - [x] implement game over logic
 
-### Add-ons
+### Add-ons:
   - expanded grid to 3x3 (from original 2x2)
   - generated additional sounds for 3x3 grid
   - generated README.md
