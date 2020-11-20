@@ -18,10 +18,10 @@ body {
 }
 
 .btn {
-  margin: 25px;
+  margin: 10px;
   display: inline-block;
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
   border: 10px solid black;
   border-radius: 20%;
 }
@@ -31,20 +31,41 @@ body {
   opacity: 0.8;
 }
 
-.red {
-  background-color: red;
-}
-
-.green {
+.top-1 {
   background-color: green;
 }
 
-.blue {
+.top-2 {
+  background-color: red;
+}
+
+.top-3 {
   background-color: blue;
 }
 
-.yellow {
+.mid-1 {
   background-color: yellow;
+}
+
+.mid-2 {
+  background-color: deepskyblue;
+}
+
+.mid-3 {
+  /* maroon */
+  background-color: #b03060;
+}
+
+.bot-1 {
+  background-color: navy;
+}
+
+.bot-2 {
+  background-color: fuchsia;
+}
+
+.bot-3 {
+  background-color: lime;
 }
 
 .pressed {

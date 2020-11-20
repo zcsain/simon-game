@@ -1,7 +1,9 @@
 let gamePattern = [];
-let buttonColors = ["red", "blue", "green", "yellow"];
+// let buttonColors = ["red", "blue", "green", "yellow"];
+let buttonColors = ["red", "blue", "green", "yellow", "deepskyblue", "fuchsia", "lime", "maroon", "navy"];
 let userClickedPattern = [];
 let level = 0;
+let length = buttonColors.length - 1;
 
 function playPattern() {
 
@@ -13,7 +15,7 @@ function playPattern() {
     setTimeout(function(i) {
       $("#" + gamePattern[i]).fadeOut(100).fadeIn(100);
       playSound(gamePattern[i]);
-    }, 600 * i, i)
+    }, 750 * i, i)
 
   }
 
@@ -21,7 +23,7 @@ function playPattern() {
 
 // Genrates a random color (next sequence in pattern)
 function nextSeq() {
-  let randomNumber = Math.round(Math.random() * 3);
+  let randomNumber = Math.round(Math.random() * length);
   let randomChosenColor = buttonColors[randomNumber];
   gamePattern.push(randomChosenColor);
 
@@ -32,7 +34,7 @@ function nextSeq() {
 // No longer used
 function nextSequence() {
 
-  let randomNumber = Math.round(Math.random() * 3);
+  let randomNumber = Math.round(Math.random() * length);
   let randomChosenColor = buttonColors[randomNumber];
   gamePattern.push(randomChosenColor);
 
@@ -55,7 +57,7 @@ function animatePress(color) {
   $("#" + color).addClass("pressed");
   setTimeout(function() {
     $("#" + color).removeClass("pressed");
-  }, 100);
+  }, 110);
 }
 
 // Checks if the user answer matches the specified pattern
@@ -70,7 +72,7 @@ function checkAnswer(currentLevel) {
       setTimeout(function() {
         // nextSequence();
         playPattern()
-      }, 1000);
+      }, 1150);
 
       userClickedPattern = [];
 
@@ -135,31 +137,15 @@ $(document).on("keydown", function() {
   }
 })
 
-// Future implementation of leaderboard ---------------------------
-function addElement() {
-  console.log("I WAS PRESSED");
-  $(".list-group").append("<li>THIS IS THE NEW ROW</li>");
-}
+// Changes the title of the page when user leaves tab/returns to tab with the game
+let titel = document.title;
+let blurMessage = "Don't go, it's lonely here";
+let focusMessage = "Simon Game"
 
-class Player {
-  constructor(name, level) {
-    this.name = name;
-    this.level = level;
-  }
-}
+window.addEventListener("blur", function() {
+  document.title = blurMessage;
+});
 
-let timmy = new Player("Timmy", 1);
-let tommy = new Player("Tommy", 10);
-let jack = new Player("Jack", 100);
-
-let listOfPlayers = [timmy, tommy, jack];
-
-function createLeaderboard() {
-
-  for (let i = 0; i < listOfPlayers.length; i++) {
-    $(".list-group").append("<li>" + listOfPlayers[i].name + " - " + listOfPlayers[i].level + "</li>");
-  }
-
-}
-
-// Future implementation of leaderboard ---------------------------
+window.addEventListener("focus", function() {
+  $("title").text(focusMessage);
+})
