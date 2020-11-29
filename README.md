@@ -17,21 +17,21 @@ Files that were provided at the beginning of the challenge:
 
 ## Challenge - Finish
 Tasks to complete challenge:
-  - [x] link index.js
-  - [x] link jQuery
-  - [x] implement pattern generation
-  - [x] implement sound play
-  - [x] implement button animation
-  - [x] implement user input check
-  - [x] implement game over logic
+  - [x] Link index.js
+  - [x] Link jQuery
+  - [x] Implement pattern generation
+  - [x] Implement sound play
+  - [x] Implement button animation
+  - [x] Implement user input check
+  - [x] Implement game over logic
 
 ### Add-ons
-  - expanded grid to 3x3 (from original 2x2)
-  - generated additional sounds for 3x3 grid
-  - generated README.md
-  - published game on GitHub Pages
-  - added favicon
-  - added title change on focus change
+  - Expanded grid to 3x3 (from original 2x2)
+  - Generated additional sounds for 3x3 grid
+  - Generated README.md
+  - Published game on GitHub Pages
+  - Added favicon
+  - Added title change on focus change
 
 ## Technologies used:
   - JS DOM manipulation
