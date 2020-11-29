@@ -7,8 +7,6 @@ Simon game implemented as a part of a challenge in the course: [The Complete 202
 Sample:
 ![](simon_gif.gif)
 
----
-
 ## Challenge - Start
 Files that were provided at the beginning of the challenge:
   - styles.css
